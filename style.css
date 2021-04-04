@@ -1,0 +1,16 @@
+header{
+    background-image: url(./media/plates-header.jpg);
+    background-size: cover;
+}
+nav{
+    display: inline-flex;
+    width: 100%;
+    background-color: white;
+}
+ul{
+    display: inline-flex;
+    list-style: none;
+}
+li{
+    margin:1em;
+}
