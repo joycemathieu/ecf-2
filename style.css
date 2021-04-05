@@ -1,16 +1,28 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 header{
     background-image: url(./media/plates-header.jpg);
     background-size: cover;
 }
 nav{
-    display: inline-flex;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;  
+    background-color: white;
+    font-weight: bold;
+    font-size: 11px;
+}
+.img-cut{
+    height: 30px;
     background-color: white;
 }
-ul{
-    display: inline-flex;
+.list{
+    display: inline-block;
     list-style: none;
-}
-li{
     margin:1em;
+}
+.title-container{
+    text-align: center;
+    width: 40%;
+    margin: auto;
 }
