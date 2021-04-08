@@ -17,13 +17,19 @@ nav{
 
 nav ul{
     list-style: none;
+    display: flex;
 }
 
 .list{
-    display: inline-block;
+    display: flex;
+    align-items: center;
     padding-left: 20px;
     font-size: 12px;
     font-weight: bold;
+}
+.fa, .fas{
+    padding:3px;
+    padding-bottom: 7px;
 }
 
 .title-container{
@@ -57,10 +63,10 @@ header div p{
 .grid-container
 {
     display: grid;
-    grid-template-columns: 250px 250px 250px;
+    grid-template-columns: 30% 30% 30%;
     grid-column-gap: 20px;
-    margin: auto;
-    width: fit-content;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .plates{
@@ -76,6 +82,14 @@ header div p{
     width: 100%;
     height: 200px;
     object-fit: cover;
+}
+
+.btn{
+    position: absolute;
+    border:none;
+    background-color: black;
+    color: white;
+    padding-bottom: 5px;
 }
 
 .modelPlates{
