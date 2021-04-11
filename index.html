@@ -2,7 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./style.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Joyce MATHIEU">
+
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link href="./css/style.css" media="screen and (max-width: 768px)" rel="stylesheet">
+    <link href="./css/style.css" media="screen and (max-width: 480px)" rel="stylesheet">
+    <link href="./css/style.css" media="screen and (max-width: 1200px)" rel="stylesheet">
+
+    <title>ECF-2</title>
+
     <script src="https://kit.fontawesome.com/94b67a5756.js" crossorigin="anonymous"></script>
   </head>
 
@@ -16,7 +26,47 @@
                     <li class="list">JOURNAL </li>
                     <li class="list">MORE <i class="icon fas fa-sort-down"></i></li>
                 </ul>
-                <span class="list cart">MY CART (2)<i class="icon fas fa-sort-down"></i></span>
+                <div class="cart-container">
+                <span class="list cart">MY CART (2)
+                    <i class="icon fas fa-sort-down"></i>
+                </span>
+                <!--cart pop-up-->
+                <div class="pop-up-container">
+                    <hr class="hr-cart">
+                    <article>
+                        <img class="imagePopUp" src="media/hand-painted-blue-flat-dish.jpg" alt="image pop-up blue flat dish">
+                        <div>
+                            <i class="fas fa-times"></i>
+                            <p class="pPop-up">
+                                <span>hand painted blue flat dish</span><br>
+                                <span>x 1 </span><br>
+                                <span>KIRIKO</span><br>
+                                <span>$28.00</span><br>
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <img class="imagePopUp" src="media/mashiko-yaki-indigo-small-plate.jpg" alt="image pop-up indigo small plate">
+                        <div>    
+                            <i class="fas fa-times"></i>
+                            <p class="pPop-up">
+                                <span class="modelPlates">mashiko-yaki indigo small plate</span><br>
+                                <span>x 1 </span><br>
+                                <span>KIRIKO</span><br>
+                                <span>$28.00</span><br>
+                            </p>
+                        </div>
+                    </article>
+                    <hr>
+                    <article>
+                        <p>TOTAL</p>
+                        <p>$28.00</p>
+                        <button class="btn btn-cart-popUp">VIEW CART</button>
+                        <button class="btn btn-checkout">CHECKOUT</button>
+                    </article>
+                </div>
+                <!--cart pop-up end-->
+            </div> 
             </nav>
             <div class="jumbotron">
                 <div class="title-container">
@@ -99,41 +149,6 @@
                     <p class="price">$18.00</p>
                 </article>
         </section>
-        <footer>
-            <div class="pop-up-container">
-                <hr class="hr-cart">
-                <article>
-                    <img class="imagePopUp" src="media/hand-painted-blue-flat-dish.jpg" alt="image pop-up blue flat dish">
-                    <div>
-                        <i class="fas fa-times"></i>
-                        <p class="pPop-up">
-                            <span>hand painted blue flat dish</span><br>
-                            <span>x 1 </span><br>
-                            <span>KIRIKO</span><br>
-                            <span>$28.00</span><br>
-                        </p>
-                    </div>
-                </article>
-                <article>
-                    <img class="imagePopUp" src="media/mashiko-yaki-indigo-small-plate.jpg" alt="image pop-up indigo small plate">
-                    <div>    
-                        <i class="fas fa-times"></i>
-                        <p class="pPop-up">
-                            <span>mashiko-yaki indigo small plate</span><br>
-                            <span>x 1 </span><br>
-                            <span>KIRIKO</span><br>
-                            <span>$28.00</span><br>
-                        </p>
-                    </div>
-                </article>
-                <hr>
-                <article>
-                    <p>TOTAL</p>
-                    <p>$28.00</p>
-                    <div>VIEW CART</div>
-                    <div>CHECKOUT</div>
-                </article>
-            </div>
-        </footer>
+
     </body>
 </html>

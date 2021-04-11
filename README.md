@@ -1,8 +1,6 @@
 # Storefront
 
-Vous devez réaliser un template pour une plateforme de commerce en ligne.
-
-Le template se compose de trois écrans: une page de liste de catégories, une page de détails du produit et une page de panier.
+Lors du téléchargement du dossier vous devez respecter l'arborescence des sous dossiers.
 
 ### Écrans
 #### Page de liste de catégories:
