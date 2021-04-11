@@ -85,7 +85,17 @@ h1{
 @media screen and (max-width: 768px){
     .plates-container{
         display: block;
-        width: 100%;
+    }
+    .price{
+        display: block;
+        margin: 0 auto;
+    }
+    .product-detail{
+        padding-bottom: 30px;
+    }
+    .cart-value{
+        width: 50%;
+        margin: 10px auto;
     }
     
 }
