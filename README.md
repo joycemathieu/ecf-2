@@ -2,6 +2,8 @@
 
 Lors du téléchargement du dossier vous devez respecter l'arborescence des sous dossiers.
 
+Les pages ne sont pas liées entre elles. Il faut donc ouvrir les html pour voir les 3 pages.
+
 ### Écrans
 #### Page de liste de catégories:
 ![](./screens/desktop/cart-popup.png)
