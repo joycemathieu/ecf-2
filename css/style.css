@@ -155,12 +155,38 @@ nav ul{
 .pop-up{
     font-size: 22px;
 }
+.pPop-up__mark{
+    color:gray;
+    font-size: smaller;
+}
+.pPop-up__price{
+    font-weight: bolder;
+}
 .flex-popup{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color:gray;
 }
-
+.container-btn__popup{
+    display: flex;
+}
+.btn__popup{
+    width: 40%;
+    margin: 3px auto;
+    padding: 25px;
+    font-size: initial;
+}
+.checkout{
+    color: white;
+    background-color: black;
+}
+.view{
+    color:black;
+    background-color: white;
+    border: 1px solid black;
+    font-weight: bold;
+}
 
 /* media queries*/
 @media screen and (max-width: 991px){
