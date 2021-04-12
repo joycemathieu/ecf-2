@@ -173,6 +173,15 @@ header div p{
 /*
 @media screen and (max-width: 480px){}*/
 @media screen and (max-width: 768px){
+    #logo{
+        order:2;
+    }
+    .cart-container{
+        order:3;
+    }
+    .list-parent{
+        display: none;
+    }
     .middle {
         transform: translate(20%, -165%);
       }
