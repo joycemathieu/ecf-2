@@ -217,6 +217,9 @@ nav ul{
     .imgArticle {
         height: 150px; 
     }
-    
+    .grid-container{
+        grid-template-columns: 40% 40%;
+        grid-column-gap: 10%;
+    }
 }
 
