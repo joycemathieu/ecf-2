@@ -22,19 +22,28 @@ nav{
 nav ul{
     list-style: none;
     display: flex;
+    align-items: baseline;
 }
 
 .list{
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    text-decoration: none;
+}
+
+.fa-sort-down{
+    padding:3px;
+    color:black;
+}
+
+a, .cart{
+    display: flex;
+    align-items: flex-end;
     padding-left: 20px;
     font-size: 12px;
     font-weight: bold;
     color: black;
-}
-.fa, .fas{
-    padding:3px;
-    padding-bottom: 7px;
+    text-decoration: none;
 }
 
 .title-container{
@@ -103,7 +112,7 @@ nav ul{
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    transform: translate(60%, -180%);
+    transform: translate(50%, -180%);
 }
   
 .container:hover .imgArticle {
@@ -130,14 +139,18 @@ nav ul{
 
 /* pop up */
 
+.cart:active{
+    text-decoration: underline;
+}
+
 .pop-up-container{
-    width: 40%;
+    width: 350px;
     background-color: white;
     padding: 10px;
     padding-top: 0px;
     position: absolute;
     opacity: 0;
-    transform: translate(-78%, 0%);
+    transform: translate(-70%, 2%);
 }
 .imagePopUp{
     width: 130px;
@@ -148,12 +161,16 @@ nav ul{
 }
 .fa-times{
     float:right;
+    padding:3px;
 }
-.pPop-up{
-    margin-bottom: 90px;
-}
+
 .pop-up{
-    font-size: 22px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.number{
+    font-size: smaller;
 }
 .pPop-up__mark{
     color:gray;
@@ -174,8 +191,7 @@ nav ul{
 .btn__popup{
     width: 40%;
     margin: 3px auto;
-    padding: 25px;
-    font-size: initial;
+    padding: 15px;
 }
 .checkout{
     color: white;
@@ -187,6 +203,9 @@ nav ul{
     border: 1px solid black;
     font-weight: bold;
 }
+.pPop-up{
+    height: 150px;
+}
 
 /* media queries*/
 @media screen and (max-width: 991px){
@@ -197,8 +216,7 @@ nav ul{
     font-size: 12px;
     }
 }
-/*
-@media screen and (max-width: 480px){}*/
+
 @media screen and (max-width: 768px){
     #logo{
         order:2;
@@ -211,7 +229,7 @@ nav ul{
         width: 15%;
     }
     .middle {
-        transform: translate(20%, -165%);
+        transform: translate(48%, -165%);
       }
     
     .imgArticle {
@@ -223,3 +241,8 @@ nav ul{
     }
 }
 
+@media screen and (max-width: 480px){
+    .middle {
+        transform: translate(5%, -165%);
+      }
+}

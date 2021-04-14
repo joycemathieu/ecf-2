@@ -21,24 +21,26 @@
             <nav>
                 <img id="logo" src="media/logo.png" alt="hero logo">
                 <ul class="menu">
-                    <li class="list">HOME </li>
-                    <li class="list">SHOP <i class="icon fas fa-sort-down"></i></li>
-                    <li class="list">JOURNAL </li>
-                    <li class="list">MORE <i class="icon fas fa-sort-down"></i></li>
+                    <li class="list"><a href="#">HOME </a></li>
+                    <li class="list"><a href="#">SHOP <i class="icon fas fa-sort-down"></i></a></li>
+                    <li class="list"><a href="#">JOURNAL </a></li>
+                    <li class="list"><a href="#">MORE <i class="icon fas fa-sort-down"></i></a></li>
                 </ul>
                 <div class="cart-container">
-                <span id="cart" class="list cart">MY CART (2)
-                    <i class="icon fas fa-sort-down"></i>
-                </span>
-                <!--cart pop-up-->
+                    <a>
+                        <span id="cart" class="list cart">MY CART (2)</span>
+                        <i class="icon fas fa-sort-down"></i>
+                    </a>
+                </div>
+                <!--cart pop-up start-->
                 <div id="pop-up-container" class="pop-up-container">
                     <article>
                         <img class="imagePopUp" src="media/hand-painted-blue-flat-dish.jpg" alt="image pop-up blue flat dish">
                         <div>
                             <i class="fas fa-times"></i>
                             <p class="pPop-up">
-                                <span class="modelPlates pop-up">hand painted blue flat dish</span>
-                                <span>x 1 </span><br>
+                                <span class="pop-up">hand painted blue flat dish</span>
+                                <span class="number">x 1 </span><br>
                                 <span class="pPop-up__mark">KIRIKO</span><br>
                                 <span class="pPop-up__price">$28.00</span><br>
                             </p>
@@ -49,8 +51,8 @@
                         <div>    
                             <i class="fas fa-times"></i>
                             <p class="pPop-up">
-                                <span class="modelPlates pop-up">mashiko-yaki indigo small plate</span>
-                                <span>x 1 </span><br>
+                                <span class="pop-up">mashiko-yaki indigo small plate</span>
+                                <span class="number">x 1 </span><br>
                                 <span class="pPop-up__mark">KIRIKO</span><br>
                                 <span class="pPop-up__price">$28.00</span><br>
                             </p>
@@ -69,7 +71,6 @@
                     </article>
                 </div>
                 <!--cart pop-up end-->
-            </div> 
             </nav>
             <div class="jumbotron">
                 <div class="title-container">
@@ -80,7 +81,7 @@
                 </div>
             </div>
         </header>
-        <section class="grid-container">
+        <div class="grid-container">
                 <article class="plates">
                     <div class="container">
                         <img class="imgArticle" src="./media/blue-stripe-stoneware-plate.jpg" alt="blue stripe stoneware plate">
@@ -136,6 +137,7 @@
                             <button class="btn btn-detail">VIEW DETAILS</button>
                             <button class="btn btn-cart">ADD TO CART</button>
                         </div>
+                    </div>
                     <p class="mark">Kiriko</p>
                     <h2 class="modelPlates">mashiko yaki indigo small plate</h2>
                     <p class="price">$28.00</p>
@@ -147,11 +149,12 @@
                             <button class="btn btn-detail">VIEW DETAILS</button>
                             <button class="btn btn-cart">ADD TO CART</button>
                         </div>
+                    </div>
                     <p class="mark">Kiriko</p>
                     <h2 class="modelPlates">mashiko yaki saucer</h2>
                     <p class="price">$18.00</p>
                 </article>
-        </section>
-        <script type="text/javascript" src="app.js"></script>
+            </div>
+        <script src="app.js"></script>
     </body>
 </html>
