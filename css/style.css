@@ -2,10 +2,7 @@ body{
     margin:0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-header{
-    display: flex;
-    flex-direction: column;
-}
+
 .jumbotron{
     background-image: url("../media/plates-header.jpg");
     background-size: cover;
@@ -106,6 +103,7 @@ a, .cart{
     transition: .5s ease;
     backface-visibility: hidden;
     object-fit: cover;
+    z-index: -2;
   }
   
 .middle {
@@ -131,6 +129,7 @@ a, .cart{
     padding: 5px 15px;
     margin: 5%;
     border:none;
+    text-align: center;
   }
 
 .btn:hover{
@@ -150,7 +149,7 @@ a, .cart{
     padding-top: 0px;
     position: absolute;
     opacity: 0;
-    transform: translate(-70%, 2%);
+    transform: translate(-60%, 2%);
 }
 .imagePopUp{
     width: 130px;
@@ -164,6 +163,9 @@ a, .cart{
     padding:3px;
 }
 
+.fa-shopping-bag{
+    opacity: 0;
+}
 .pop-up{
     font-size: 13px;
     font-weight: bold;
@@ -178,6 +180,7 @@ a, .cart{
 }
 .pPop-up__price{
     font-weight: bolder;
+    font-size: 13px;
 }
 .flex-popup{
     display: flex;
@@ -197,7 +200,7 @@ a, .cart{
     color: white;
     background-color: black;
 }
-.view{
+.view, .view:hover{
     color:black;
     background-color: white;
     border: 1px solid black;
@@ -224,6 +227,12 @@ a, .cart{
     .cart-container{
         order:3;
     }
+    .fa-shopping-bag{
+        opacity: 1;
+    }
+    #cart{
+        display: none;
+    }
     .menu{
         visibility: hidden;
         width: 15%;
@@ -238,6 +247,9 @@ a, .cart{
     .grid-container{
         grid-template-columns: 40% 40%;
         grid-column-gap: 10%;
+    }
+    .pop-up-container {
+        transform: translate(-85%, 2%);
     }
 }
 

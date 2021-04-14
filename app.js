@@ -3,4 +3,4 @@ function onClickOn(){
     popUp.style.opacity = '1';
 };
 
-document.getElementById('cart').addEventListener('click',onClickOn);
+document.getElementById('mycart').addEventListener('click',onClickOn);

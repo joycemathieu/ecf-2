@@ -1,8 +1,9 @@
 # Storefront
+En cliquant sur le lien "shop' dans le menu vous êtes redirigé la page de détails du produit (la manipulation n'est possible que dans la version ordinateur).
 
-Lors du téléchargement du dossier vous devez respecter l'arborescence des sous dossiers.
-
-Les pages ne sont pas liées entre elles. Il faut donc ouvrir les html pour voir les 3 pages.
+Afin de pouvoir explorer la page du panier il faut cliquer sur le bouton "my cart"; ce click fait
+apparaitre la cart-popup. En cliquant sur le bouton view cart ou checkout vous êtes rediriger vers celle-ci, vous pouvez aussi passer par le "overlay" de la même façon.
+.
 
 ### Écrans
 #### Page de liste de catégories:

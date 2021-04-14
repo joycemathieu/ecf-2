@@ -22,55 +22,56 @@
                 <img id="logo" src="media/logo.png" alt="hero logo">
                 <ul class="menu">
                     <li class="list"><a href="#">HOME </a></li>
-                    <li class="list"><a href="#">SHOP <i class="icon fas fa-sort-down"></i></a></li>
+                    <li class="list"><a href="product-detail.html">SHOP <i class="icon fas fa-sort-down"></i></a></li>
                     <li class="list"><a href="#">JOURNAL </a></li>
                     <li class="list"><a href="#">MORE <i class="icon fas fa-sort-down"></i></a></li>
                 </ul>
                 <div class="cart-container">
-                    <a>
+                    <a id="mycart">
+                        <i class="fas fa-shopping-bag"> (2)</i>
                         <span id="cart" class="list cart">MY CART (2)</span>
                         <i class="icon fas fa-sort-down"></i>
                     </a>
-                </div>
-                <!--cart pop-up start-->
-                <div id="pop-up-container" class="pop-up-container">
-                    <article>
-                        <img class="imagePopUp" src="media/hand-painted-blue-flat-dish.jpg" alt="image pop-up blue flat dish">
+                    <!--cart pop-up start-->
+                    <div id="pop-up-container" class="pop-up-container">
                         <div>
-                            <i class="fas fa-times"></i>
-                            <p class="pPop-up">
-                                <span class="pop-up">hand painted blue flat dish</span>
-                                <span class="number">x 1 </span><br>
-                                <span class="pPop-up__mark">KIRIKO</span><br>
-                                <span class="pPop-up__price">$28.00</span><br>
-                            </p>
+                            <img class="imagePopUp" src="media/hand-painted-blue-flat-dish.jpg" alt="image pop-up blue flat dish">
+                            <div>
+                                <i class="fas fa-times"></i>
+                                <p class="pPop-up">
+                                    <span class="pop-up">hand painted blue flat dish</span>
+                                    <span class="number">x 1 </span><br>
+                                    <span class="pPop-up__mark">KIRIKO</span><br>
+                                    <span class="pPop-up__price">$28.00</span><br>
+                                </p>
+                            </div>
                         </div>
-                    </article>
-                    <article>
-                        <img class="imagePopUp" src="media/mashiko-yaki-indigo-small-plate.jpg" alt="image pop-up indigo small plate">
-                        <div>    
-                            <i class="fas fa-times"></i>
-                            <p class="pPop-up">
-                                <span class="pop-up">mashiko-yaki indigo small plate</span>
-                                <span class="number">x 1 </span><br>
-                                <span class="pPop-up__mark">KIRIKO</span><br>
-                                <span class="pPop-up__price">$28.00</span><br>
-                            </p>
+                        <div>
+                            <img class="imagePopUp" src="media/mashiko-yaki-indigo-small-plate.jpg" alt="image pop-up indigo small plate">
+                            <div>    
+                                <i class="fas fa-times"></i>
+                                <p class="pPop-up">
+                                    <span class="pop-up">mashiko-yaki indigo small plate</span>
+                                    <span class="number">x 1 </span><br>
+                                    <span class="pPop-up__mark">KIRIKO</span><br>
+                                    <span class="pPop-up__price">$28.00</span><br>
+                                </p>
+                            </div>
                         </div>
-                    </article>
-                    <hr>
-                    <article>
-                        <div class="flex-popup">
-                            <p>TOTAL</p>
-                            <p>$28.00</p>
+                        <hr>
+                        <div>
+                            <div class="flex-popup">
+                                <p>TOTAL</p>
+                                <p>$28.00</p>
+                            </div>
                         </div>
                         <div class="container-btn__popup">
-                            <button class="btn btn__popup view">VIEW CART</button>
-                            <button class="btn btn__popup checkout">CHECKOUT</button>
+                            <a href="cart.html" class="btn btn__popup view">VIEW CART</a>
+                            <a href="cart.html" class="btn btn__popup checkout">CHECKOUT</a>
                         </div>
-                    </article>
-                </div>
-                <!--cart pop-up end-->
+                    </div>
+                    <!--cart pop-up end-->
+                    </div>
             </nav>
             <div class="jumbotron">
                 <div class="title-container">
