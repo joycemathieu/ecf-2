@@ -17,7 +17,6 @@
 
     <script src="https://kit.fontawesome.com/94b67a5756.js" crossorigin="anonymous"></script>
   </head>
-
   <body>
         <header class="container">
             <nav>
@@ -38,17 +37,15 @@
                 </div>
             </nav>
         </header>
-
         <section>
             <h1>Shopping Cart</h1>
-
-            <div>
-                <div class="shopping__title">product</div>
-                <div class="shopping__title">quantity</div>
-                <div class="shopping__title">total</div>
-                <div class="shopping__title">action</div>
-                <img class="shopping__img" src="./media/hand-painted-blue-flat-dish.jpg" alt="blue flat dish">
-                <article>
+            <div class="shopping__container">
+                <div class="shopping__title product">product</div>
+                <div class="shopping__title qty">quantity</div>
+                <div class="shopping__title total">total</div>
+                <div class="shopping__title action">action</div>
+                <img class="shopping__img dish" src="./media/hand-painted-blue-flat-dish.jpg" alt="blue flat dish">
+                <article class="shopping__article dish--description">
                     <p class="mark">kiriko</p>
                     <h2>hand painted blue flat dish</h2>
                     <p>color:<span>white</span></p>
@@ -58,13 +55,10 @@
                     <div class="square1">+</div>
                     <div class="square2">-</div>
                 </div>
-                <p>$28.00</p>
+                <p class="price">$28.00</p>
                 <div><i class="fas fa-times"></i></div>
-
-                <hr>
-
-                <img class="shopping__img" src="./media/hand-painted-blue-flat-dish.jpg" alt="blue flat dish">
-                <article>
+                <img class="shopping__img yaki" src="./media/mashiko-yaki-indigo-small-plate.jpg" alt="blue flat dish">
+                <article class="shopping__article yaki--description">
                     <p class="mark">kiriko</p>
                     <h2>mashiko-yaki indigo small plate</h2>
                 </article>
@@ -73,21 +67,18 @@
                     <div class="square1">+</div>
                     <div class="square2">-</div>
                 </div>
-                <p>$28.00</p>
+                <p class="price">$28.00</p>
                 <div><i class="fas fa-times"></i></div>
-
-                <hr>
-
-                <p>cart overview</p>
-                <p>subtotal</p>
-                <p>total</p>
-                <p>$56.00</p>
-                <p>$56.00 CAD</p>
-
-                <hr>
-
-                <a href="#">continue shopping</a>
-
+                <div class="shopping__overview">
+                    <p>cart overview</p>
+                    <p>subtotal</p>
+                    <p>total</p>
+                </div>
+                <div class="shopping__price">
+                    <p>$56.00</p>
+                    <p>$56.00 CAD</p>
+                </div>
+                <a class="continue" href="#">continue shopping</a>
                 <button class="btn">CHECKOUT</button>
             </div>
         </section>
