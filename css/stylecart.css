@@ -71,6 +71,7 @@ h2{
 .shopping__title{
     color: gray;
     text-transform: uppercase;
+    font-size: small;
 }
 .btn{
     grid-column-start: 4;
@@ -84,4 +85,53 @@ h2{
     align-items: flex-start;
     text-transform: uppercase;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 768px){
+    .shopping__title{
+        display:none;
+    }
+    .shopping__container{
+        grid-template-columns: 150px 200px;
+        grid-template-rows: 100px;
+        grid-row-gap: 10px;
+        width: 330px;
+        padding: 40px;
+    }
+    .dish{
+        grid-row-start: 1;
+    }
+    .valuefirst{
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .yaki--description{
+        grid-row-start: 3;
+    }
+    .price, .cross, .shopping__price{
+        grid-column-start: 2;
+    }
+    .shopping__price{
+        text-align: end;
+    }
+    .cart-value, .shopping__overview{
+        grid-column: 1;
+        width: 100%;
+    }
+    .btn {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 200px;
+        height: 40px;
+        justify-self: center;
+    }
+    .cross{
+        display: none;
+    }
+    .continue{
+        justify-content: center;
+        text-decoration: none;
+        border-bottom: 1px solid black;
+    }
+
 }
